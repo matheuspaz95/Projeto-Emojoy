@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Emojoy com ESP32</title>
+  <style>
+    /* ===== Estilo Geral ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif; /* Fonte padrão em todo o site */
+      background-image: url('emojoy-projeto.png'); /* coloque aqui o nome do arquivo da imagem */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #000;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Camada translúcida para leitura */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.65); /* deixa a imagem visível e texto legível */
+      z-index: -1;
+    }
+
+    /* ===== Cabeçalho ===== */
+    header {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+      padding: 50px 20px;
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+      color: #000;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      color: #111;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #222;
+    }
+
+    /* ===== Conteúdo Principal ===== */
+    main {
+      padding: 40px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      max-width: 800px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: left;
+      color: #000;
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #ff7b54;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.05em;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.6);
+      border-left: 4px solid #ff7b54;
+      border-radius: 8px;
+      color: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== Rodapé ===== */
+    footer {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 20px;
+      font-size: 0.9em;
+      color: #000;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>😊 Projeto Emojoy com ESP32</h1>
+    <p>Uma ferramenta lúdica e inclusiva para o aprendizado das emoções</p>
+  </header>
+
+  <main>
+    <section id="missao">
+      <h2>🎯 Missão</h2>
+      <p>
+        O projeto <strong>“Emojoy com ESP32”</strong> cumpre seu objetivo de criar uma ferramenta tecnológica acessível e eficiente para ensinar emoções de forma lúdica. 
+        A integração entre hardware e software proporcionou uma experiência dinâmica, educativa e inclusiva. 
+        Por meio da eletrônica e da programação, foi possível desenvolver um recurso que contribui tanto para o aprendizado emocional quanto para a inclusão digital em ambientes educacionais e terapêuticos.
+      </p>
+      <p>
+        <em>Como trabalhos futuros</em>, pretende-se aprimorar o sistema com novas funcionalidades, como conexão sem fio para coleta de dados, 
+        armazenamento de desempenho e uso de inteligência artificial para personalização da experiência.
+      </p>
+    </section>
+
+    <section id="equipe">
+      <h2>👥 Equipe</h2>
+      <ul>
+        <li><strong>Matheus Paz</strong></li>
+        <li><strong>Gabriel Pimentel</strong></li>
+      </ul>
+    </section>
+
+    <section id="tecnologias">
+      <h2>💡 Tecnologias Utilizadas</h2>
+      <ul>
+        <li>ESP32</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Projeto Emojoy — Desenvolvido por Matheus Paz e Gabriel Pimentel</p>
+  </footer>
+
+</body>
+</html>
